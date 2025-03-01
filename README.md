@@ -56,4 +56,3 @@ This will check for events every 5 minutes and trigger phone calls accordingly.
 ---
 
 Need any extra informations, please contact me.
-
