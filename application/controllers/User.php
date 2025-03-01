@@ -9,6 +9,10 @@ class User extends CI_Controller
       parent::__construct();
       $this->load->helper('url');
       $this->load->model('User_model');
+      if (!$this->session->userdata('uid')) {
+        $_SESSION['redirect_url'] = $_SERVER['REQUEST_URI'];
+        redirect(base_url() . 'login');
+      }
     }
 
     public function index(){

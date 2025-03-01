@@ -3,7 +3,7 @@ class User_model extends CI_Model
 {
  function index()
  {
-    $id=$this->session->userdata('uid');;
+    $id=$this->session->userdata('uid');
     $this->db->select("*");
     $this->db->where('login_oauth_uid', $id);
 		$qry = $this->db->get('user');
